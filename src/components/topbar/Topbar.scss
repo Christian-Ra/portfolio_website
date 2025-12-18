@@ -1,0 +1,93 @@
+@import "../../global.scss";
+
+.topbar {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    transition: all 0.5s ease;
+
+    .wrapper {
+        display: flex;
+        padding: 10px 30px;
+        align-items: center;
+        justify-content: space-between;
+
+        .left {
+            display: flex;
+            align-items: center;
+
+            .logo {
+                font-size: 40px;
+                font-weight: 700;
+                text-decoration: none;
+                color: inherit;
+                margin-right: 30px;
+            }
+
+            .itemContainer {
+                display: flex;
+                align-items: center;
+                margin-right: 30px;
+
+                .icon {
+                    font-size: 18px;
+                    margin-right: 5px;
+                    color: inherit;
+                }
+
+                span {
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .right {
+            .hamburger {
+                width: 28px;
+                height: 28px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                cursor: pointer;
+            }
+
+            span {
+                width: 100%;
+                height: 3px;
+                background-color: $mainColor;
+                transform-origin: left;
+                transition: all 0.5s ease;
+            }
+        }
+    }
+
+    &.active {
+        background-color: $mainColor;
+        color: white;
+
+        .itemContainer {
+            color: white;
+        }
+
+        .hamburger {
+            span {
+                &:first-child {
+                    transform: rotate(45deg);
+                    background-color: white;
+                }
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+                &:last-child {
+                    transform: rotate(-45deg);
+                    background-color: white;
+                }
+            }
+        }
+    }
+}
