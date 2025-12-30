@@ -1,12 +1,12 @@
 @import "../../global.scss";
 
 .menu {
-    width: 350px;
+    width: 400px;
     height: 100vh;
-    background-color: $mainColor;
+    background-color: white;
     position: fixed;
     top: 0;
-    right: -350px;
+    right: -400px;
     z-index: 2;
     display: flex;
     flex-direction: column;
@@ -16,17 +16,18 @@
     transition: all 0.5s ease;
     &.active {
         right: 0;
+        background-color: $mainColor;
     }
 
     ul {
-        margin: 0;
+        margin: 15px 15px;
         padding: 0;
         list-style: none;
-        font-size: 46px;
+        font-size: 36px;
         color: white;
 
         li {
-            margin-bottom: 25px;
+            margin-bottom: 30px;
             a {
                 font-size: inherit;
                 color: inherit;

@@ -9,10 +9,25 @@ export default function Portfolio() {
         <li>Featured</li>
         <li>Web App</li>
         <li>Mobile App</li>
-        <li>Design</li>
-        <li>Branding</li>
+        {/* <li>Design</li>
+        <li>Branding</li> */}
       </ul>
       <div className="container">
+        {
+          <div className="item">
+            <img src={norsman} alt="" />
+          </div>
+        }
+        {
+          <div className="item">
+            <img src={norsman} alt="" />
+          </div>
+        }
+        {
+          <div className="item">
+            <img src={norsman} alt="" />
+          </div>
+        }
         {
           <div className="item">
             <img src={norsman} alt="" />
