@@ -12,7 +12,7 @@ export default function Menu({ menuOpen, setMenuOpen }) {
           title={"Who I am"}
         />
         <MenuLink
-          section={"Portfolio"}
+          section={"Profile"}
           setMenuOpen={setMenuOpen}
           title={"What I code"}
         />
@@ -22,7 +22,7 @@ export default function Menu({ menuOpen, setMenuOpen }) {
           title={"How I've done it"}
         />
         <MenuLink
-          section={"Profile"}
+          section={"Portfolio"}
           setMenuOpen={setMenuOpen}
           title={"What else I do"}
         />
